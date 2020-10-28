@@ -20,5 +20,10 @@
                 </li>
             </ul>
         </div>
+        <?php if (logged_in()) :  ?>
+            <a class="nav-item nav-link" href="/logout">Logout</a>
+        <?php else : ?>
+            <a class="nav-item nav-link" href="/login">Login</a>
+        <?php endif ?>
     </div>
 </nav>
